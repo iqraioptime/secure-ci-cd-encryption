@@ -1,1 +1,24 @@
-ECHO is on.
+name: CI/CD Encryption Test
+
+on: [push]
+
+jobs:
+  encryption-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Python Dependencies
+      run: |
+        pip install cryptography
+        pip install phe
+
+    - name: Run AES Encryption Script
+      run: |
+        python aes_encrypt.py
+
+    - name: Run Paillier Encryption Script
+      run: |
+        python paillier_encrypt.py
