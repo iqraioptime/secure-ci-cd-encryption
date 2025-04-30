@@ -1,0 +1,5 @@
+pandas 
+psutil 
+matplotlib 
+cryptography 
+phe 
