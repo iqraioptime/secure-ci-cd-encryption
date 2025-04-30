@@ -1,0 +1,10 @@
+AES:
+  Execution Time: 0.0025 seconds
+  CPU Usage: 0.00%
+  Memory Usage: 18.36 MB
+
+Paillier:
+  Execution Time: 3.3005 seconds
+  CPU Usage: 0.00%
+  Memory Usage: 18.43 MB
+
